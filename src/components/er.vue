@@ -1,22 +1,16 @@
 <template>
   <div class="hello">
-	<img alt="Vue logo" src="../assets/logo.png">
     <h1>{{ msg }}</h1>
-	<router-link to="/er">asd</router-link>
-	<br />
-	<img src="../../static/image/a.jpg" alt="猫" />
-	<img src="../../static/image/b.jpg" alt="狗" />
-	<img src="../../static/image/c.png" alt="叉" />
-	<router-link to="/san">s</router-link>
+	<span>asdasd</span>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'HelloWorld',
+  name: 'er',
   data() {
 	return {
-	msg: 'zxczxczxczc'
+	msg: '我是二级页面'
 	}
   }
 }
