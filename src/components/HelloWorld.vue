@@ -1,41 +1,21 @@
 <template>
-  <div class="hello">
-	<img alt="Vue logo" src="../assets/logo.png">
-    <h1>{{ msg }}</h1>
-	<router-link to="/er">asd</router-link>
-	<br />
-	<img src="../../static/image/a.jpg" alt="猫" />
-	<img src="../../static/image/b.jpg" alt="狗" />
-	<img src="../../static/image/c.png" alt="叉" />
-	<router-link to="/san">s</router-link>
-  </div>
+	<div class="hello" id="layout">
+		
+	</div>
 </template>
 
 <script>
-export default {
-  name: 'HelloWorld',
-  data() {
-	return {
-	msg: 'zxczxczxczc'
+	export default {
+		name: 'HelloWorld',
+		data() {
+			return {
+				msg: 'zxczxczxczc'
+			}
+		}
 	}
-  }
-}
 </script>
 
 <!-- Add "scoped" attribute to limit CSS to this component only -->
-<style scoped>
-h3 {
-  margin: 40px 0 0;
-}
-ul {
-  list-style-type: none;
-  padding: 0;
-}
-li {
-  display: inline-block;
-  margin: 0 10px;
-}
-a {
-  color: #42b983;
-}
+<style lang="less">
+	#layout {}
 </style>

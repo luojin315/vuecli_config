@@ -4,7 +4,11 @@ import san from '@/components/san.vue'
 import ch from '@/components/chil.vue'
 const routes = [
 	{
-		path: '/',
+			path: '/',
+			redirect: '/home'
+	},
+	{
+		path: '/home',
 		name: 'index',
 		component: hello
 	},
@@ -23,8 +27,7 @@ const routes = [
 		name: 'sanChilds',
 		component: san,
 		props: true,
-		children: [
-			{
+		children: [{
 				path: 'p1',
 				component: ch,
 				name: '1'
@@ -35,6 +38,11 @@ const routes = [
 				name: '1'
 			},
 		]
+	},
+	{
+		path: '/filter',
+		name: 'filter',
+		component: () => import('../components/filterTable')
 	}
 ]
 export default routes
